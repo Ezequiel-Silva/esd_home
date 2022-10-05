@@ -1,14 +1,20 @@
 @import 'reset.css';
 body{
-    background-color: #000;
+    background-color: #DDD;
 }
 header {
     background-color: #2571B7;
     color: #FFF;
-    height: 48px;
+    /* height: 48px; */
 }
 section{}
 footer{
     background-color: #FFFFFF;
     color: #B4B4B4;
 }
+.container{
+    margin: 0 auto;
+    width: 324px;
+    border: 1px solid #000;
+}
+/* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

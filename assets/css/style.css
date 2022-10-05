@@ -2,3 +2,13 @@
 body{
     background-color: #000;
 }
+header {
+    background-color: #2571B7;
+    color: #FFF;
+    height: 48px;
+}
+section{}
+footer{
+    background-color: #FFFFFF;
+    color: #B4B4B4;
+}

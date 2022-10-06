@@ -3,7 +3,8 @@
     margin: 0;
     vertical-align: baseline;
     list-style: none;
-    border: 0
+    border: 0;
+    font: normal normal 600 14px/19px Segoe UI;
 }
 
 body {

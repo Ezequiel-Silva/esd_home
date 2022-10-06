@@ -1,11 +1,6 @@
 @import 'reset.css';
 @import 'header.css';
 
-.button{
-    padding: 5px 15px;
-    border: 1px solid #C00;
-    font-size: 1.2rem;
-}
 footer{
     background-color: #FFFFFF;
     color: #B4B4B4;

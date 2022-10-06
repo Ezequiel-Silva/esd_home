@@ -38,5 +38,28 @@ footer{
     width: 324px;
     border: 1px solid #000;
 }
+.footer_group_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p { text-align: center; }
+.logo_img{
+    width: 29.85px;
+    height: 28.95px; 
+    background-color: #000;
+}
+.logo_text_group{
+    text-transform: uppercase;
+    margin-left: -13px;
+}
+.logo_text_main{
+    font-size: 1.8rem;
+    margin-bottom: -5px;
+}
+.logo_text_secondary{
+    font-size: 0.4rem;
+    letter-spacing: 0.2rem;
+}
 
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

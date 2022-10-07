@@ -39,8 +39,16 @@ header {
 }
 .button_main{
     font-size: 1.5rem;
-    padding: 12px 0;
+    padding: 16px 0;
 }
 .button{
     color: #FFF;
+}
+.menu_button{
+    /* margin: auto; */
+}
+.logo_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

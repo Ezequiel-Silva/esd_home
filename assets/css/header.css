@@ -25,11 +25,22 @@ header {
     height: 2px;
 }
 .menu_button{
-    background-color: #002050;
-    padding: 5px 15px 4px 15px;
     border: 1px solid #C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A4EF;
+    max-width: 288px;
+}
+.button_header{
+    background-color: #002050;
+    font-size: 1.05rem;
+    padding: 5px 15px 4px 15px;
+}
+.button_main{
+    font-size: 1.5rem;
+    padding: 12px 0;
 }
 .button{
-    font-size: 1.05rem;
     color: #FFF;
 }

@@ -1,6 +1,8 @@
 header {
     background-color: #2571B7;
     color: #FFF;
+    width: 100%;
+    position: fixed;
 }
 .menu_group{
     display: flex;

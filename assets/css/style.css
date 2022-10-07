@@ -1,6 +1,16 @@
 @import 'reset.css';
 @import 'header.css';
 
+main{
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url("../img/notebook_fundo.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    height: calc(100vh - 48px);
+    color: #FFFFFF;
+    padding-top: 48px;
+}
 footer{
     background-color: #FFFFFF;
     color: #B4B4B4;

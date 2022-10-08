@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'header.css';
+@import 'footer.css';
 
 main{
     background-repeat: no-repeat;
@@ -21,7 +22,20 @@ footer{
     width: 324px;
     border: 1px solid #000;
 }
-.footer_group_logo{
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align_between{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_copy{
+    color: #B4B4B4;
+}
+/*component logo*/
+.group_logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,17 +74,6 @@ footer{
     letter-spacing: 0.2rem;
     margin: 0px;
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.align_between{
-    display: flex;
-    justify-content: space-between;
-}
-.footer_copy{
-    color: #B4B4B4;
-}
+/*-/-/-/-/-/-/-/-/-*/
 
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

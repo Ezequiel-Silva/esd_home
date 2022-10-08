@@ -3,8 +3,8 @@
 
 main{
     background-repeat: no-repeat;
-    background-position: right top;
-    background-image: url("../img/notebook_fundo.jpg");
+    background-position: center bottom;
+    background-image: url("../img/fundo_img_main2.png");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     height: calc(100vh - 48px);

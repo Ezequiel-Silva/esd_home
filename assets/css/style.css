@@ -1,6 +1,5 @@
 @import 'reset.css';
 @import 'header.css';
-@import 'footer.css';
 
 main{
     background-repeat: no-repeat;
@@ -26,10 +25,17 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: #002050 1px  solid;
 }
 .flex_between{
     display: flex;
     justify-content: space-between;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 48px);
 }
 .footer_copy{
     color: #B4B4B4;
@@ -96,6 +102,14 @@ footer{
 }
 .button{
     color: #FFF;
+}
+.text_main{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.text_secondary{
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 /*-/-/-/-/-/-/-/-/-*/
 

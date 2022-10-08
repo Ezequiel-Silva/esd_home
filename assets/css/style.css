@@ -22,19 +22,19 @@ footer{
     width: 324px;
     border: 1px solid #000;
 }
-main{
+.flex_center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.align_between{
+.flex_between{
     display: flex;
     justify-content: space-between;
 }
 .footer_copy{
     color: #B4B4B4;
 }
-/*component logo*/
+/*Component logo*/
 .group_logo{
     display: flex;
     justify-content: center;
@@ -73,6 +73,29 @@ main{
     font-size: 0.4rem;
     letter-spacing: 0.2rem;
     margin: 0px;
+}
+/*-/-/-/-/-/-/-/-/-*/
+
+/*Component button*/
+.menu_button{
+    border: 1px solid #C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A4EF;
+    max-width: 288px;
+}
+.button_header{
+    background-color: #002050;
+    font-size: 1.05rem;
+    padding: 5px 15px 4px 15px;
+}
+.button_main{
+    font-size: 1.5rem;
+    padding: 16px 0;
+}
+.button{
+    color: #FFF;
 }
 /*-/-/-/-/-/-/-/-/-*/
 

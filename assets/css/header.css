@@ -1,3 +1,4 @@
+@import url('component/colors.css');
 header {
     background-color: #2571B7;
     color: var(--color-white);

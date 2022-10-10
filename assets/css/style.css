@@ -78,6 +78,21 @@ main{
 }
 .chart{
     border: 3px solid #DEDEDE;
+    padding: 1.72rem;
+}
+.chart__title{
+    color: #F25022;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 0.25rem;
+}
+.chart__text{
+    color: #737373;
+    font-size: 0.76rem;
+    text-align: center;
+    line-height: 1.24rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.25rem;
 }
 
 

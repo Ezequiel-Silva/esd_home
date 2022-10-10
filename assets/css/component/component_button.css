@@ -4,12 +4,17 @@
     justify-content: center;
     align-items: center;
     background-color: #00A4EF;
-    max-width: 288px;
+    width: 268px;
 }
 .button_header{
     background-color: #002050;
     font-size: 1.05rem;
     padding: 5px 15px 4px 15px;
+}
+.button_head{
+    min-width: 113px;
+    max-width: 138px;
+    float: right;
 }
 .button_main{
     font-size: 1.5rem;
@@ -17,6 +22,8 @@
 }
 .button{
     color: #FFF;
+    width: 100%;
+    text-align: center;
 }
 .text_main{
     font-size: 3rem;
@@ -26,3 +33,7 @@
     font-size: 1.5rem;
     padding: 1rem;
 }
+.menu_button_main{
+    width: 100%;
+}
+/* 468px*/

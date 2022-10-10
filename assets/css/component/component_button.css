@@ -1,0 +1,28 @@
+.menu_button{
+    border: 1px solid #C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00A4EF;
+    max-width: 288px;
+}
+.button_header{
+    background-color: #002050;
+    font-size: 1.05rem;
+    padding: 5px 15px 4px 15px;
+}
+.button_main{
+    font-size: 1.5rem;
+    padding: 16px 0;
+}
+.button{
+    color: #FFF;
+}
+.text_main{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.text_secondary{
+    font-size: 1.5rem;
+    padding: 1rem;
+}

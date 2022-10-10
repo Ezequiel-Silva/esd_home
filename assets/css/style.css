@@ -9,6 +9,7 @@ main{
     background-image: url("../img/fundo_img_main2.png");
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
+    min-height: 300px;
     height: calc(100vh - 48px);
     color: #FFFFFF;
     padding-top: 48px;
@@ -41,6 +42,7 @@ footer{
     justify-content: space-between;
 }
 .main__size{
+    min-height: 300px;
     height: calc(100vh - 48px);
 }
 .footer__left,
@@ -53,8 +55,28 @@ footer{
 .card{
     background-color: #0072C6;
     width: 100%;
-    margin: 1rem 0px;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: start;
 }
+.card__img{
+    padding: 0 0.7rem 0 1rem;
+}
+.card__text h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+    padding: 0.4rem 0;
+}
+.card__text p{
+    text-align: start;
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #FFF;
+    padding: 0.4rem 0;
+}
+// 468px
 
 
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

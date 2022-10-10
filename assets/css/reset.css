@@ -6,6 +6,7 @@
     border: 0;
     font: normal normal 600 14px/19px Segoe UI;
     color: #000;
+    box-sizing: content-box;
 }
 
 body {

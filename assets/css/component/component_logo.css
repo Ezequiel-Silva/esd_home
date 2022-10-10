@@ -1,39 +1,7 @@
-.group_logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #F00;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo,
+.logo img{
     border: 1px solid #0Db;
-}
-.logo_img{
-    width: 2.3rem;
-    height: 2.4rem; 
-    background-color: rgb(142, 199, 238);
+    width: 9.5rem;
+    height: 2.5rem;
     border: 1px solid rgb(73, 112, 73);
-}
-.logo_text_group{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    border: 1px solid #00F;
-    height: 2.4rem;
-}
-.logo_text_main{
-    font-size: 1.8rem;
-    height: 10vh;
-    margin: 0px;
-    /* position: relative; 
-    top: 0.45rem; */
-}
-.logo_text_secondary{
-    font-size: 0.4rem;
-    letter-spacing: 0.2rem;
-    margin: 0px;
 }

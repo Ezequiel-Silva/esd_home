@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00A4EF;
+    background-color: var(--color-azul-claro);
     width: 268px;
 }
 .button_header{
@@ -21,7 +21,7 @@
     padding: 16px 0;
 }
 .button{
-    color: #FFF;
+    color: var(--color-white);
     width: 100%;
     text-align: center;
 }

@@ -2,21 +2,18 @@
 @import 'header.css';
 @import 'component/component_button.css';
 @import 'component/component_logo.css';
+@import 'component/colors.css';
 
 main{
     background-repeat: no-repeat;
     background-position: center bottom;
     background-image: url("../img/fundo_img_main2.png");
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color-black);
     background-size: cover;
     min-height: 300px;
     height: calc(100vh - 48px);
-    color: #FFFFFF;
+    color: var(--color-white);
     padding-top: 48px;
-}
-footer{
-    background-color: #FFFFFF;
-    color: #000;
 }
 .container{
     margin-left: auto;
@@ -24,7 +21,7 @@ footer{
     max-width: 1200px;
     width: 80vw;
     min-width: 310px;
-    border: 1px solid #000;
+    border: 1px solid var(--color-black);
 }
 .flex__center{
     display: flex;
@@ -39,7 +36,6 @@ footer{
 .flex__column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .main__size{
     min-height: 300px;
@@ -66,19 +62,22 @@ footer{
 .card__text h3{
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FFF;
+    color: var(--color-white);
     padding: 0.4rem 0;
 }
 .card__text p{
     text-align: start;
     font-size: 0.85rem;
     font-weight: normal;
-    color: #FFF;
+    color: var(--color-white);
     padding: 0.4rem 0;
 }
 .frame__button{
     display: inline-block;
     padding: 0.35rem;
+}
+.chart{
+    border: 3px solid #DEDEDE;
 }
 
 

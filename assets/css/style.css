@@ -52,6 +52,7 @@ main{
 .footer__left,
 .footer__right{
     border: 1px solid #F00;
+    margin-top: 4.72rem;
 }
 .footer_copy{
     color: #B4B4B4;
@@ -207,7 +208,17 @@ input:valid ~ label{
 .frame__title__orange{
     color: #FFB900;
 }
-
+.text{
+    color: #737373;
+    padding-top: 1.5rem;
+}
+.text__title{
+    color: #2571B7;
+    font-size: 1.2rem;
+}
+.banner__text{
+    padding: 2rem 0;
+}
 
 
 

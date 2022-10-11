@@ -80,10 +80,6 @@ main{
     color: var(--color-white);
     padding: 0.4rem 0;
 }
-.frame__button{
-    display: inline-block;
-    padding: 0.35rem;
-}
 .chart{
     border: 3px solid #DEDEDE;
     padding: 1.72rem;
@@ -167,5 +163,52 @@ input:valid ~ label{
     background-color: var(--color-azul-claro);
     font-weight: normal;
 }
+.frame{
+    padding: 1.5rem 0;
+    border-bottom: 3px solid #DEDEDE;
+}
+.frame__button{
+    display: inline-block;
+    padding: 0.35rem;
+}
+.frame__button__green{
+    border: 2px solid #7FBA00;
+}
+.frame__button__blue{
+    border: 2px solid #00A4EF;
+}
+.frame__button__orange{
+    color: #FFB900;
+    border: 2px solid #FFB900;
+}
+.frame__title{
+    align-self: flex-start;
+    font-size: 1rem;
+    /* padding: 1rem 0; */
+}
+.frame__text{
+    font-size: 0.78rem;
+    text-align:  start;
+    color: #737373;
+    padding: 1.29rem 0;
+}
+.frame__img{
+    margin-left: 1.29rem;
+}
+.frame__button__green,
+.frame__title__green{
+    color: #7FBA00;
+}
+.frame__button__blue,
+.frame__title__blue{
+    color: #00A4EF;
+}
+.frame__button__orange,
+.frame__title__orange{
+    color: #FFB900;
+}
+
+
+
 
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

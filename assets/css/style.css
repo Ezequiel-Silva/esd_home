@@ -10,7 +10,7 @@ main{
     background-image: url("../img/fundo_img_main2.png");
     background-color: var(--color-black);
     background-size: cover;
-    min-height: 300px;
+    min-height: 390px;
     height: calc(100vh - 48px);
     color: var(--color-white);
     padding-top: 48px;
@@ -46,7 +46,7 @@ main{
     flex-direction: column;
 }
 .main__size{
-    min-height: 300px;
+    min-height: 390px;
     height: calc(100vh - 48px);
 }
 .footer__left,

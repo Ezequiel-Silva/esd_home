@@ -162,6 +162,10 @@ input:valid ~ label{
 .form__button button{
     border: 1px solid #F00;
     font-size: 28px;
-    padding: 0.85rem 3.5rem;
+    padding: 1.11rem 3.5rem;
+    color: #FFFFFF;
+    background-color: var(--color-azul-claro);
+    font-weight: normal;
 }
+
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

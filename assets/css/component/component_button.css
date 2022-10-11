@@ -21,6 +21,11 @@
     font-size: 1.5rem;
     padding: 16px 0;
 }
+.button__size__main{
+    max-width: 266px;
+    width: 188px;
+    margin: 4.3rem auto 0 auto;
+}
 .button{
     color: var(--color-white);
     width: 100%;
@@ -36,5 +41,8 @@
 }
 .menu_button_main{
     width: 100%;
+}
+.logo__size{
+    width: 188px;
 }
 /* 468px*/

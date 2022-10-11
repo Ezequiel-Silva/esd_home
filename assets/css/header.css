@@ -12,7 +12,6 @@ header {
     height: 48px;
 }
 .menu__line__group{
-    border: 1px solid #0C0;
     height: 18px;
     width: 24px;
     display: flex;

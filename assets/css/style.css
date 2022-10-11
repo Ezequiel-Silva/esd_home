@@ -21,13 +21,11 @@
     max-width: 1200px;
     width: 80vw;
     min-width: 310px;
-    border: 1px solid var(--color-black);
 }
 .flex__center{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #002050 1px  solid;
 }
 .flex__between{
     display: flex;
@@ -43,7 +41,6 @@
 }
 .footer__left,
 .footer__right{
-    border: 1px solid #F00;
     margin-top: 4.72rem;
 }
 .footer_copy{
@@ -74,7 +71,6 @@
     padding: 0.4rem 0;
 }
 .chart{
-    border: 3px solid #DEDEDE;
     padding: 1.72rem;
 }
 .chart__title{
@@ -143,13 +139,11 @@ input:valid ~ label{
     margin-bottom: 1.5rem;
 }
 .form__button{
-    border: 1px solid #000;
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
 }
 .form__button button{
-    border: 1px solid #F00;
     font-size: 28px;
     padding: 1.11rem 3.5rem;
     color: #FFFFFF;
@@ -162,7 +156,6 @@ input:valid ~ label{
     max-width: 564px;
     width: 310px;
     min-width: 310px;
-    border: 1px solid var(--color-black);
 }
 .frame{
     padding: 1.5rem 0;

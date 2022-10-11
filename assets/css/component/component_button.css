@@ -1,6 +1,5 @@
 @import url('colors.css');
 .menu_button{
-    border: 1px solid #C00;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,12 +30,12 @@
     width: 100%;
     text-align: center;
 }
-.text_main{
+.text__main{
     font-size: 3rem;
     padding: 1rem;
     color: var(--color-white);
 }
-.text_secondary{
+.text__secondary{
     font-size: 1.5rem;
     padding: 1rem;
     font-weight: normal;

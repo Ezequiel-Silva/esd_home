@@ -109,4 +109,38 @@ main{
     font-weight: normal;
     background-size: cover;
 }
+.form{
+    background-color: #E6E6E6;
+    margin: 0 auto;
+}
+input{
+    max-width: 468px;
+    min-width: 288px;
+    color: #737373;
+}
+label{
+    color: #737373;
+    cursor: pointer;
+}
+input[for="LoremIpsum5"]:target, 
+input[id="LoremIpsum5"]:focus{
+    color: #2571B7;
+}
+input:focus,
+input:valid{
+    border: 2px solid #2571B7;
+}
+input:focus ~ label,
+input:valid ~ label{
+    color: #2571B7;
+}
+.flex__column__reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 1.28rem;
+}
+.form__button{
+    border: 1px solid #000;
+}
+
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

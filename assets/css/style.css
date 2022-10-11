@@ -94,6 +94,19 @@ main{
     padding-top: 1.2rem;
     padding-bottom: 0.25rem;
 }
-
-
+.image{
+    height: 16rem;
+    background-color: #0072C6;
+    background-image: url('../img/fundo_img_section.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.image__text{
+    color: var(--color-white);
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    background-size: cover;
+}
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

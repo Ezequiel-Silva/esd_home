@@ -4,3 +4,21 @@
     --color-black: #000;
     --color-azul-claro: #00A4EF;
 }
+a.card__structure:nth-child(1){
+    background-color: #0072C6;
+}
+a.card__structure:nth-child(2){
+    background-color: #2C5898;
+}
+a.card__structure:nth-child(3){
+    background-color: #207245;
+}
+a.card__structure:nth-child(4){
+    background-color: #CB4A32;
+}
+a.card__structure:nth-child(5){
+    background-color: #733781;
+}
+a.card__structure:nth-child(6){
+    background-color: #00AFF0;
+}

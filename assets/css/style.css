@@ -22,8 +22,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    width: 80vw;
-    min-width: 310px;
+    width: 90vw;
 }
 .section__principal__background{
     display: flex;
@@ -60,14 +59,14 @@
 .card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    max-width: 1200px;
+    justify-content: space-between;
 }
 .card__structure{
-    background-color: #0072C6;
     width: 100%;
     margin: 1rem 0;
     padding: 1rem 0;
-    max-width: 480px;
+    max-width: 576px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,9 +88,7 @@
     color: var(--color-white);
     padding: 0.4rem 1.5rem 0.4rem 0;
 }
-.chart{
-    padding: 1.72rem;
-}
+.chart{ padding: 1.72rem; }
 .chart__title{
     color: #F25022;
     font-size: 1.1rem;
@@ -279,24 +276,47 @@ input:valid ~ label{
 .footer_copy{
     color: #B4B4B4;
 }
-@media only screen and (max-width: 600px){
-    body{
+@media only screen and (max-width: 1280px){
+    .card__structure{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
         background-color: #0f0f0f;
     }
-    .arrow{
+
+    .arrow {
         display: none;
     }
-    .section__principal__footer{
+
+    .section__principal__footer {
         justify-content: center;
     }
-    .text b{
+
+    .text b {
         color: inherit;
     }
-    .banner__text{
+
+    .banner__text {
         padding: 2.8rem 0 2.4rem 0;
     }
-    .footer__logo{
+
+    .footer__logo {
         max-width: 293.60px;
+    }
+
+    .card {
+        max-width: 600px;
+    }
+
+    .card__structure {
+        max-width: 480px;
+    }
+    .container{
+        width: 80vw;
+        min-width: 310px;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

@@ -223,12 +223,15 @@ input:valid ~ label{
     color: #737373;
     padding-top: 1.5rem;
 }
+.text b{
+    color: #F25022;
+}
 .text__title{
     color: #2571B7;
     font-size: 1.2rem;
 }
 .banner__text{
-    padding: 2rem 0;
+    padding: 5.4rem 0 6.9rem 0;
 }
 .arrow{
     display: flex;
@@ -269,6 +272,12 @@ input:valid ~ label{
     }
     .section__principal__footer{
         justify-content: center;
+    }
+    .text b{
+        color: inherit;
+    }
+    .banner__text{
+        padding: 2.8rem 0 2.4rem 0;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

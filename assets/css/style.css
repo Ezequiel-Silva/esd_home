@@ -230,5 +230,27 @@ input:valid ~ label{
 .banner__text{
     padding: 2rem 0;
 }
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    width: 29.5px;
+    height: 41px;
+    border: 1px solid #0f0;
+    /*cateto 28,11 = 790,1721*/
+    /*cateto 29,7 = 882,09*/
+    /*h 1672,2621 ~= 40,89*/
+}
+.arrow__left{
+    background-color: #FFF;
+    height: 40.89px;
+    width: 2px;
+    transform: rotate(-45deg);
+}
+.arrow__right{
+    background-color: #F00;
+    height: 40.89px;
+    width: 2px;
+    transform: rotate(45deg);
+}
 
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

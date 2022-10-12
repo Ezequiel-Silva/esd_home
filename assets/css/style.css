@@ -58,28 +58,36 @@
     flex-direction: column;
 }
 .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__structure{
     background-color: #0072C6;
     width: 100%;
     margin: 1rem 0;
     padding: 1rem 0;
+    max-width: 480px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
-.card__img{
+.card__structure__img{
     padding: 0 0.7rem 0 1rem;
 }
-.card__text h3{
+.card__structure__text h3{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color-white);
     padding: 0.4rem 0;
 }
-.card__text p{
+.card__structure__text p{
     text-align: start;
     font-size: 0.85rem;
     font-weight: normal;
     color: var(--color-white);
-    padding: 0.4rem 0;
+    padding: 0.4rem 1.5rem 0.4rem 0;
 }
 .chart{
     padding: 1.72rem;

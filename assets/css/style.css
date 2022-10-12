@@ -14,6 +14,9 @@
     height: calc(100vh - 48px);
     color: var(--color-white);
     padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
     margin-left: auto;
@@ -21,6 +24,25 @@
     max-width: 1200px;
     width: 80vw;
     min-width: 310px;
+}
+.section__principal__background{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 390px;
+    height: calc(100vh - 48px);
+}
+.text__main{
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--color-white);
+}
+.text__secondary{
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: normal;
+    color: var(--color-white);
+    line-height: 2.5rem;
 }
 .flex__center{
     display: flex;
@@ -34,10 +56,6 @@
 .flex__column{
     display: flex;
     flex-direction: column;
-}
-.main__size{
-    min-height: 390px;
-    height: calc(100vh - 48px);
 }
 .footer__left,
 .footer__right{
@@ -212,4 +230,5 @@ input:valid ~ label{
 .banner__text{
     padding: 2rem 0;
 }
+
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

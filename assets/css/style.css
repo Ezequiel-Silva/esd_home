@@ -202,6 +202,9 @@ input:valid ~ label{
 .frame__line{
     width: 53px;
     height: 4px;
+    background-color: #DEDEDE;
+    margin-top: 1.15rem; /*16px*/
+    margin-bottom: 0.15rem;/*2px*/
 }
 .frame__text{
     font-size: 0.78rem;
@@ -321,28 +324,37 @@ input:valid ~ label{
     .card__structure {
         max-width: 480px;
     }
-    .container{
+
+    .container {
         width: 80vw;
         min-width: 310px;
     }
-    .frame{
+
+    .frame {
         border-bottom: 3px solid #DEDEDE;
     }
-    .frame__line{
+
+    .frame__line {
         display: none;
     }
-    .frame__button__green{
-        padding-left: 0.36rem; /*82 por 30*/
+
+    .frame__button__green {
+        padding-left: 0.36rem;
+        /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
     }
-    .frame__button__blue{
-        padding-left: 0.36rem; /*82 por 30*/
+
+    .frame__button__blue {
+        padding-left: 0.36rem;
+        /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
     }
-    .frame__button__orange{
-        padding-left: 0.36rem; /*82 por 30*/
+
+    .frame__button__orange {
+        padding-left: 0.36rem;
+        /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
     }

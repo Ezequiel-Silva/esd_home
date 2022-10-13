@@ -175,26 +175,33 @@ input:valid ~ label{
 }
 .frame{
     padding: 1.5rem 0;
-    border-bottom: 3px solid #DEDEDE;
-}
-.frame__button{
-    display: inline-block;
-    padding: 0.35rem;
 }
 .frame__button__green{
+    display: inline-block;
+    padding: 0.65rem 0.84rem; /*110 por 41*/
+    font-size: 1rem;
     border: 2px solid #7FBA00;
 }
 .frame__button__blue{
+    display: inline-block;
+    padding: 0.65rem 0.84rem; /*110 por 41*/
+    font-size: 1rem;
     border: 2px solid #00A4EF;
 }
 .frame__button__orange{
-    color: #FFB900;
+    display: inline-block;
+    padding: 0.65rem 0.84rem; /*110 por 41*/
+    font-size: 1rem;
     border: 2px solid #FFB900;
 }
 .frame__title{
     align-self: flex-start;
     font-size: 1rem;
     /* padding: 1rem 0; */
+}
+.frame__line{
+    width: 53px;
+    height: 4px;
 }
 .frame__text{
     font-size: 0.78rem;
@@ -317,6 +324,27 @@ input:valid ~ label{
     .container{
         width: 80vw;
         min-width: 310px;
+    }
+    .frame{
+        border-bottom: 3px solid #DEDEDE;
+    }
+    .frame__line{
+        display: none;
+    }
+    .frame__button__green{
+        padding-left: 0.36rem; /*82 por 30*/
+        padding-right: 0.36rem;
+        font-size: 0.82rem;
+    }
+    .frame__button__blue{
+        padding-left: 0.36rem; /*82 por 30*/
+        padding-right: 0.36rem;
+        font-size: 0.82rem;
+    }
+    .frame__button__orange{
+        padding-left: 0.36rem; /*82 por 30*/
+        padding-right: 0.36rem;
+        font-size: 0.82rem;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

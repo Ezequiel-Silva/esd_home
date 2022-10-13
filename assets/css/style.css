@@ -174,13 +174,30 @@ input:valid ~ label{
     min-width: 310px;
 }
 .frame{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.frame__container{
     padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 336px;
+}
+div.frame__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .frame__button__green{
     display: inline-block;
     padding: 0.65rem 0.84rem; /*110 por 41*/
     font-size: 1rem;
     border: 2px solid #7FBA00;
+    margin-left: auto;
+    margin-right: auto;
 }
 .frame__button__blue{
     display: inline-block;
@@ -194,11 +211,7 @@ input:valid ~ label{
     font-size: 1rem;
     border: 2px solid #FFB900;
 }
-.frame__title{
-    align-self: flex-start;
-    font-size: 1rem;
-    /* padding: 1rem 0; */
-}
+.frame__title{  }
 .frame__line{
     width: 53px;
     height: 4px;
@@ -206,13 +219,13 @@ input:valid ~ label{
     margin-top: 1.15rem; /*16px*/
     margin-bottom: 0.15rem;/*2px*/
 }
-.frame__text{
+.frame__text__secondary{
     font-size: 0.78rem;
     text-align:  start;
     color: #737373;
     padding: 1.29rem 0;
 }
-.frame__img{
+.frame__img__item{
     margin-left: 1.29rem;
 }
 .frame__button__green,
@@ -292,7 +305,7 @@ input:valid ~ label{
         margin-right: auto;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 746px) {
     body {
         background-color: #0f0f0f;
     }
@@ -330,12 +343,9 @@ input:valid ~ label{
         min-width: 310px;
     }
 
-    .frame {
-        border-bottom: 3px solid #DEDEDE;
-    }
-
-    .frame__line {
-        display: none;
+    .frame{
+        display: flex;
+        justify-content: space-around;
     }
 
     .frame__button__green {
@@ -343,6 +353,8 @@ input:valid ~ label{
         /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
+        margin-left: none;
+        margin-right: none;
     }
 
     .frame__button__blue {
@@ -350,6 +362,8 @@ input:valid ~ label{
         /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
+        margin-left: none;
+        margin-right: none;
     }
 
     .frame__button__orange {
@@ -357,6 +371,22 @@ input:valid ~ label{
         /*82 por 30*/
         padding-right: 0.36rem;
         font-size: 0.82rem;
+        margin-left: none;
+        margin-right: none;
+    }
+    .frame__line {
+        display: none;
+    }
+    .frame__container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame__title{
+        align-self: flex-start;
+        font-size: 1rem;
+        /* padding: 1rem 0; */
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

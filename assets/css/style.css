@@ -300,6 +300,9 @@ div.frame__text{
 .footer_copy{
     color: #B4B4B4;
 }
+.menu__link{
+    display: none;
+}
 @media only screen and (max-width: 1280px){
     .card__structure{
         margin-left: auto;
@@ -399,5 +402,32 @@ div.frame__text{
     .frame__container div.frame__text{
         align-items: flex-start;
     }
+    .menu__link{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #2571B7;
+        font-size: 1.05rem;
+        border-top: 1px solid #000;
+    }
+    li.menu__link a{
+        display: flex;
+        justify-content: center;
+        color: var(--color-white);
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        cursor: pointer;
+    }
+    /* .menu__group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+    } */
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

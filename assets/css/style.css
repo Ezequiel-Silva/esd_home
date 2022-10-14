@@ -196,8 +196,6 @@ div.frame__text{
     padding: 0.65rem 0.84rem; /*110 por 41*/
     font-size: 1rem;
     border: 2px solid #7FBA00;
-    margin-left: auto;
-    margin-right: auto;
 }
 .frame__button__blue{
     display: inline-block;
@@ -211,7 +209,10 @@ div.frame__text{
     font-size: 1rem;
     border: 2px solid #FFB900;
 }
-.frame__title{  }
+.frame__title{ 
+    text-align: center;
+    font-size: 1.43rem; /* 172 por 27 */
+}
 .frame__line{
     width: 53px;
     height: 4px;
@@ -225,9 +226,6 @@ div.frame__text{
     color: #737373;
     padding: 1.29rem 0;
 }
-.frame__img__item{
-    margin-left: 1.29rem;
-}
 .frame__button__green,
 .frame__title__green{
     color: #7FBA00;
@@ -239,6 +237,9 @@ div.frame__text{
 .frame__button__orange,
 .frame__title__orange{
     color: #FFB900;
+}
+.frame__img__item{
+    height: 11.43rem; /* 160px */
 }
 .text{
     color: #737373;
@@ -387,6 +388,16 @@ div.frame__text{
         align-self: flex-start;
         font-size: 1rem;
         /* padding: 1rem 0; */
+    }
+    .frame__img__item{
+        margin-left: 1.29rem;
+        height: auto;
+    }
+    .frame__title{ 
+        font-size: 1.07rem; /* 129 por 20 */
+    }
+    .frame__container div.frame__text{
+        align-items: flex-start;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

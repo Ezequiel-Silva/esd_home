@@ -1,4 +1,7 @@
 @import url('component/colors.css');
+:root{
+    --width-header: 48px;
+}
 header {
     background-color: #2571B7;
     color: var(--color-white);
@@ -10,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    height: var(--width-header);
 }
 .menu__line__group{
     height: 18px;

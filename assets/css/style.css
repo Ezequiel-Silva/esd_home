@@ -269,6 +269,8 @@ div.frame__text{
     color: #2571B7;
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 6.86rem; /*96*/
+    margin-bottom: 1.93rem; /*48 - 21 = 27*/
 }
 .banner__text{
     padding: 5.4rem 0 6.9rem 0;
@@ -467,11 +469,5 @@ div.frame__text{
         margin-top: 2.36rem; /*33*/
         margin-bottom: 1.93rem; /*27*/
     }
-    /* .menu__group{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: var(--width-header);
-    } */
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

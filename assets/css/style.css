@@ -462,6 +462,11 @@ div.frame__text{
     .chart:nth-last-of-type(1){
         border-bottom-width: 4px;
     }
+    .text__title{
+        font-size: 1.2rem;
+        margin-top: 2.36rem; /*33*/
+        margin-bottom: 1.93rem; /*27*/
+    }
     /* .menu__group{
         display: flex;
         justify-content: space-between;

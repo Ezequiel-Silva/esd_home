@@ -319,9 +319,6 @@ div.frame__text{
 .footer_copy{
     color: #B4B4B4;
 }
-.menu__link{
-    display: none;
-}
 @media only screen and (max-width: 1280px){
     .card__structure{
         margin-left: auto;
@@ -420,27 +417,6 @@ div.frame__text{
     }
     .frame__container div.frame__text{
         align-items: flex-start;
-    }
-    .menu__link{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: var(--width-header);
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background-color: #2571B7;
-        font-size: 1.1rem;
-        border-top: 1px solid #000;
-    }
-    li.menu__link a{
-        display: flex;
-        justify-content: center;
-        color: var(--color-white);
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 8px;
-        cursor: pointer;
     }
     .chart__container{
         flex-direction: column;

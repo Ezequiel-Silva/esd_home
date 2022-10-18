@@ -15,14 +15,6 @@ header {
     align-items: center;
     height: var(--width-header);
 }
-/* .menu__line__group{
-    height: 18px;
-    width: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-} */
 .menu__label, 
 .menu__check {
     display: none;
@@ -41,12 +33,14 @@ header {
         right: 0;
         background-color: #2571B7;
         font-size: 1.1rem;
-        border-top: 1px solid #000;
+        border-top: 1px solid #2C5898;
         height: 0;
         z-index: 1;
         visibility: hidden;
         overflow-y: hidden;
         transition: 0.5s;
+        gap: 0rem;
+        justify-content: space-around;
     }
 
     li.menu__link a{
@@ -54,15 +48,11 @@ header {
         justify-content: center;
         color: var(--color-white);
         width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         cursor: pointer;
     }
 
     .menu__label {
         display: flex;
-        /* align-items: center;
-        color: #fff; */
         cursor: pointer;
     }
 
@@ -84,7 +74,8 @@ header {
     }
 
     .menu__check:checked ~ .menu__link{
-        height: 80vh;
+        height: 40vh;
+        min-height: 200px;
         visibility: visible;
         overflow-y: auto; /*garante que caso tenha mais itens terá um scroll na tela*/
     }

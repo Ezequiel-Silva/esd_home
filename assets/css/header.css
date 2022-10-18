@@ -57,7 +57,7 @@ header {
     }
 
     .menu__line__item{
-        border-top: 0.125rem solid #F00;
+        border-top: 0.145rem solid #FFF;
         width: 1.25rem;
     }
 
@@ -66,7 +66,7 @@ header {
         content: " ";
         display: block;
         width: 1.25rem;
-        height: 0.125rem;
+        height: 0.12rem;
         background: #FFF;
         margin-top: 0.3125rem;
         position: relative;

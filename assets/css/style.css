@@ -149,7 +149,8 @@ label{
     color: #737373;
     cursor: pointer;
 }
-input,label{
+.flex__column__reverse input,
+.flex__column__reverse label{
     max-width: 468px;
     min-width: 250px;
     width: 250px;

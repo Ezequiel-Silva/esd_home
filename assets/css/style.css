@@ -282,7 +282,6 @@ div.frame__text{
     width: 29.5px;
     padding: 0 1rem;
     height: 41px;
-    border: 1px solid #0f0;
     cursor: pointer;
     /*cateto 28,11 = 790,1721*/
     /*cateto 29,7 = 882,09*/
@@ -295,7 +294,7 @@ div.frame__text{
     transform: rotate(-45deg);
 }
 .arrow__right{
-    background-color: #F00;
+    background-color: #FFF;
     height: 40.89px;
     width: 2px;
     transform: rotate(45deg);

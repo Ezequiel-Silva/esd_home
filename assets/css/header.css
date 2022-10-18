@@ -85,11 +85,11 @@ header {
     }
 
     .menu__check:checked ~ .menu__line__item::before {
-        transform: rotate(135deg);
+        transform: translateY(12px) rotate(135deg);
     }
 
     .menu__check:checked ~ .menu__line__item::after {
-        transform: rotate(-135deg);
+        transform: translateY(-12px) rotate(-135deg);
         top: -0.4375rem;
     }
 }

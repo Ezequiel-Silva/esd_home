@@ -79,7 +79,6 @@ header {
 
     .menu__check:checked ~ .menu__link{
         height: 40vh;
-        min-height: 200px;
         visibility: visible;
         overflow-y: auto; /*garante que caso tenha mais itens terá um scroll na tela*/
     }

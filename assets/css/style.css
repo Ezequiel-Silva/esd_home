@@ -10,11 +10,9 @@
     background-image: url("../img/fundo_img_main2.png");
     background-color: var(--color-black);
     background-size: cover;
-    min-height: 390px;
     height: calc(100vh - var(--width-header));
     color: var(--color-white);
     padding-top: var(--width-header);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -32,11 +30,14 @@
     display: flex;
     border: 2px solid #DEDEDE;
 }
+.section__principal,
 .section__principal__background{
-    display: flex;
+   min-height: 592px; 
+   display: flex;
+}
+.section__principal__background{
     flex-direction: column;
     justify-content: space-between;
-    min-height: 390px;
     height: calc(100vh - var(--width-header));
 }
 .text__main{

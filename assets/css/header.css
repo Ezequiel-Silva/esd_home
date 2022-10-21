@@ -50,13 +50,13 @@ header {
         width: 100%;
         cursor: pointer;
     }
-
+    /**/
     .menu__label {
         display: flex;
         cursor: pointer;
     }
 
-    .menu__line__item{
+    .menu__line__item {
         border-top: 0.145rem solid #FFF;
         width: 1.25rem;
     }
@@ -80,16 +80,15 @@ header {
         overflow-y: auto; /*garante que caso tenha mais itens terá um scroll na tela*/
     }
 
-    .menu__check:checked ~ .menu__line__item {
+    .menu__check:checked ~ .menu__label .menu__line__item {
         border-top-color: transparent;
     }
 
-    .menu__check:checked ~ .menu__line__item::before {
-        transform: translateY(12px) rotate(135deg);
+    .menu__check:checked ~ .menu__label .menu__line__item::before {
+        transform: translateY(1px) rotate(135deg);
     }
 
-    .menu__check:checked ~ .menu__line__item::after {
-        transform: translateY(-12px) rotate(-135deg);
-        top: -0.4375rem;
-    }
+    .menu__check:checked ~ .menu__label .menu__line__item::after {
+        transform: translateY(-5px) rotate(-135deg);
+    } 
 }

@@ -39,6 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - var(--width-header));
+    /* padding: 0 auto; */
 }
 .text__main{
     font-size: 3rem;
@@ -243,7 +244,7 @@ div.frame__text{
     font-size: 0.78rem;
     text-align:  start;
     color: #737373;
-    padding: 1.29rem 0;
+    padding: 1.72rem 0;
 }
 .frame__button__green,
 .frame__title__green{
@@ -335,7 +336,7 @@ div.frame__text{
         max-width: 23.15rem;
         margin-left: auto;
         margin-right: auto;
-        padding: 1.72rem 0;
+        padding: 1.72rem 0 4.3rem 0;
     }
 
     .arrow {

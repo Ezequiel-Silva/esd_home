@@ -47,7 +47,7 @@
 }
 .text__secondary{
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 0;
     font-weight: normal;
     color: var(--color-white);
     line-height: 2.5rem;
@@ -329,6 +329,13 @@ div.frame__text{
 @media only screen and (max-width: 746px) {
     body {
         background-color: #0f0f0f;
+    }
+
+    .text__secondary{
+        max-width: 23.15rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.72rem 0;
     }
 
     .arrow {

@@ -1,20 +1,16 @@
 @import url('colors.css');
-.menu_button{
+/*0.0715 ~= 1pixel*/
+.menu_button{ background-color: var(--color-azul-claro); }
+.button_header{
+    background-color: #002050;
+    padding: 0.572rem 1.572rem; /*8 22*/
+    color: var(--color-white);
+}
+.menu_button,
+.button_head{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-azul-claro);
-    width: 268px;
-}
-.button_header{
-    background-color: #002050;
-    font-size: 1.05rem;
-    padding: 5px 15px 4px 15px;
-}
-.button_head{
-    min-width: 113px;
-    max-width: 138px;
-    float: right;
 }
 .button__main__link{
     font-size: 1.5rem;
@@ -55,6 +51,10 @@
     padding: 4.3rem 0 1.93rem 0;
 }
 @media only screen and (max-width: 746px) {
+    .button_header{
+        font-size: 1rem; /*14*/
+        padding: 0.358rem 1.072rem; /*5 15*/
+    }
     .button__main{
         background-color: var(--color-azul-claro);
         max-width: 188px;

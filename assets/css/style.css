@@ -10,16 +10,16 @@
     background-image: url("../img/fundo_img_main2.png");
     background-color: var(--color-black);
     background-size: cover;
-    height: calc(100vh - var(--width-header));
+    height: calc(100vh - var(--header-menu));
     color: var(--color-white);
-    padding-top: var(--width-header);
+    padding-top: var(--header-menu);
     justify-content: center;
     align-items: center;
 }
 .container{
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 1200px;
+    min-width: 210px; /*Modificação*/
     width: 90vw;
 }
 .chart__container{
@@ -38,7 +38,7 @@
 .section__principal__background{
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - var(--width-header));
+    height: calc(100vh - var(--header-menu));
     /* padding: 0 auto; */
 }
 .text__main{
@@ -144,7 +144,6 @@
     padding: 1.28rem;
 }
 input{
-    font-size: 1.2rem;
     padding: 0.7rem;
     color: #737373;
 }
@@ -317,7 +316,7 @@ div.frame__text{
 }
 @media only screen and (max-width: 746px) {
     body { background-color: #0f0f0f; }
-
+    .container { width: 80vw; }
     .text__secondary{
         margin-left: auto;
         margin-right: auto;
@@ -326,6 +325,15 @@ div.frame__text{
 
     .arrow {
         display: none;
+    }
+
+    .section__principal__background,
+    .section__principal{
+        height: calc(100vh - var(--header-menu-mobile));
+    }
+
+    .section__principal{
+        padding-top: var(--header-menu-mobile);
     }
 
     .section__principal__footer {
@@ -349,13 +357,6 @@ div.frame__text{
 
     .card {
         max-width: 600px;
-    }
-
-    
-
-    .container {
-        width: 80vw;
-        min-width: 310px;
     }
 
     .frame{

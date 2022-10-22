@@ -1,6 +1,8 @@
 @import url('component/colors.css');
 :root{
-    --width-header: 48px;
+    --header-menu: 80px;
+    --header-menu-mobile: 48px;
+    --line-menu-mobile: 0.145rem; /*2px*/
 }
 header {
     background-color: #2571B7;
@@ -13,7 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: var(--width-header);
+    height: var(--header-menu);
+}
+.button_header,
+.menu__link a{
+    font-size: 1.143rem; /* 16 */
 }
 .menu__label, 
 .menu__check {
@@ -25,14 +31,66 @@ header {
 }
 .menu__link a{ color: #FFF; }
 @media only screen and (max-width: 746px) {
-    .menu__link{
+    .menu__group { height: var(--header-menu-mobile); }
+
+    li.menu__link a,
+    .menu__label {
+        display: flex;
+    }
+
+    .button_header,
+    .menu__link a {
+        font-size: 1rem; /* 14 */
+    }
+
+    .menu__line__item {
+        border-top: var(--line-menu-mobile) solid #FFF;
+    }
+
+    .menu__line__item,
+    .menu__line__item::before,
+    .menu__line__item::after {
+        width: 1.72rem;
+    }
+    
+    .menu__line__item::before,
+    .menu__line__item::after {
+        content: " ";
+        display: block;
+        height: var(--line-menu-mobile);
+        background: #FFF;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .menu__check:checked~.menu__link {
+        height: auto;
+        visibility: visible;
+        overflow-y: auto;
+        /*garante que caso tenha mais itens terá um scroll na tela*/
+    }
+
+    .menu__check:checked~.menu__label .menu__line__item {
+        border-top-color: transparent;
+    }
+
+    .menu__check:checked~.menu__label .menu__line__item::before {
+        transform: translateY(1px) rotate(135deg);
+    }
+
+    .menu__check:checked~.menu__label .menu__line__item::after {
+        transform: translateY(-5px) rotate(-135deg);
+    }
+
+    li.menu__link {
         flex-direction: column;
+        justify-content: space-around;
         position: absolute;
-        top: var(--width-header);
+        top: var(--header-menu-mobile);
         left: 0;
         right: 0;
         background-color: #2571B7;
-        font-size: 1.1rem;
         border-top: 1px solid #2C5898;
         height: 0;
         z-index: 1;
@@ -40,58 +98,15 @@ header {
         overflow-y: hidden;
         transition: 0.5s;
         gap: 0rem;
-        justify-content: space-around;
     }
 
-    li.menu__link a{
-        display: flex;
+    li.menu__link a {
         justify-content: center;
         color: var(--color-white);
         width: 100%;
         cursor: pointer;
-    }
-    /**/
-    .menu__label {
-        display: flex;
-        cursor: pointer;
+        padding: 2rem 0;
     }
 
-    .menu__line__item {
-        border-top: 0.145rem solid #FFF;
-    }
-
-    .menu__line__item,
-    .menu__line__item::before,
-    .menu__line__item::after{
-        width: 1.72rem;
-    }
-
-    .menu__line__item::before,
-    .menu__line__item::after{
-        content: " ";
-        display: block;
-        height: 0.145rem;
-        background: #FFF;
-        margin-top: 0.3125rem;
-        position: relative;
-        transition: 0.3s;
-    }
-
-    .menu__check:checked ~ .menu__link{
-        height: 40vh;
-        visibility: visible;
-        overflow-y: auto; /*garante que caso tenha mais itens terá um scroll na tela*/
-    }
-
-    .menu__check:checked ~ .menu__label .menu__line__item {
-        border-top-color: transparent;
-    }
-
-    .menu__check:checked ~ .menu__label .menu__line__item::before {
-        transform: translateY(1px) rotate(135deg);
-    }
-
-    .menu__check:checked ~ .menu__label .menu__line__item::after {
-        transform: translateY(-5px) rotate(-135deg);
-    } 
+    .menu__label { cursor: pointer; }
 }

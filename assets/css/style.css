@@ -103,9 +103,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1.72rem; 
-    max-width: 303px;
-    width: calc(100% / 4);
+    padding: 2.15rem 2.15rem; 
+    /* max-width: 303px; */
+    width: 25%;
     border: 2px solid #DEDEDE;
 }
 .chart__title{
@@ -184,10 +184,9 @@ input:valid ~ label{
 .frame{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .frame__container{
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,7 +229,7 @@ div.frame__text{
 }
 .frame__text__secondary{
     font-size: 0.78rem;
-    text-align:  start;
+    text-align:  center;
     color: #737373;
     padding: 1.72rem 0;
 }
@@ -363,7 +362,7 @@ div.frame__text{
     .frame{
         display: flex;
         justify-content: space-around;
-        
+        flex-wrap: wrap;
     }
 
     .frame article:not(.frame article:last-of-type){
@@ -399,11 +398,13 @@ div.frame__text{
     .frame__line {
         display: none;
     }
-    .frame__container{
+    div.frame__container{
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
+        padding: 1.5rem 0;
+        max-width: 100vw; 
     }
     .frame__title{
         align-self: flex-start;
@@ -428,14 +429,23 @@ div.frame__text{
     }
     .chart{ 
         display: flex;
+        padding: 2.15rem 1.5rem; 
+        /* width: 100%; */
+        border-left-width: 4px;
+        border-right-width: 4px;
+        min-width: 200px;
+        width: 75vw;
+    }
+    /* .chart{ 
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 1.72rem auto; 
-        width: 100%;
-        border-left-width: 4px;
-        border-right-width: 4px;
-    }
+        padding: 1.72rem; 
+        max-width: 303px;
+        width: calc(100% / 4);
+        border: 2px solid #DEDEDE;
+    } */
     .chart:nth-of-type(1){
         border-top-width: 4px;
     }
@@ -446,6 +456,9 @@ div.frame__text{
         font-size: 1.2rem;
         margin-top: 2.36rem; /*33*/
         margin-bottom: 1.93rem; /*27*/
+    }
+    .frame__text__secondary{
+        text-align:  start;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

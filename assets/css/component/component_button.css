@@ -6,18 +6,19 @@
     padding: 0.572rem 1.572rem; /*8 22*/
     color: var(--color-white);
 }
+.button_head,
 .menu_button,
-.button_head{
+.button__main__link {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .button__main__link{
-    font-size: 1.5rem;
-    padding: 16px 0;
+    font-size: 2.001rem; /* 28 */
+    padding: 1.672rem 0px;
     color: var(--color-white);
-    width: 100%;
-    text-align: center;
+    background-color: var(--color-azul-claro);
+    max-width: 266px;
 }
 .form__button{
     display: flex;
@@ -39,10 +40,7 @@
     align-items: center;
     justify-content: center;
 }
-.button__main{
-    background-color: var(--color-azul-claro);
-    width: 266px;
-}
+
 .logo__size{
     width: 188px;
 }
@@ -55,8 +53,9 @@
         font-size: 1rem; /*14*/
         padding: 0.358rem 1.072rem; /*5 15*/
     }
-    .button__main{
-        background-color: var(--color-azul-claro);
+    .button__main__link{
+        font-size: 1.5011rem; /* 21 */
+        padding: 1.158rem 0px; 
         max-width: 188px;
         margin: 0 auto;
     }

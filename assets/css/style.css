@@ -95,6 +95,48 @@ div.arrow__right{ transform: rotate(45deg); }
 }
 .text b{ color: #F25022; }
 
+.text__title{
+    color: #2571B7;
+    font-size: 3rem; /* 42px */
+    text-align: center;
+    padding-top: 8.0575rem;
+    padding-bottom: 3.129rem;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.card__structure{
+    width: 48%;
+    max-width: 576px;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.card__structure__img{
+    padding: 0 0.7rem 0 1rem;
+}
+.card__structure__text h3,
+.card__structure__text p{
+    color: var(--color-white);
+    text-align: start;
+}
+.card__structure__text h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.4rem 0;
+}
+.card__structure__text p{
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding: 0.4rem 1.5rem 0.4rem 0;
+}
+
 .flex__center{
     display: flex;
     justify-content: center;
@@ -108,39 +150,7 @@ div.arrow__right{ transform: rotate(45deg); }
     display: flex;
     flex-direction: column;
 }
-.card{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    justify-content: space-between;
-}
-.card__structure{
-    width: 48%;
-    max-width: 576px;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    /* max-width: 576px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-.card__structure__img{
-    padding: 0 0.7rem 0 1rem;
-}
-.card__structure__text h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--color-white);
-    padding: 0.4rem 0;
-}
-.card__structure__text p{
-    text-align: start;
-    font-size: 0.85rem;
-    font-weight: normal;
-    color: var(--color-white);
-    padding: 0.4rem 1.5rem 0.4rem 0;
-}
+
 .chart{ 
     display: flex;
     justify-content: center;
@@ -290,13 +300,7 @@ div.frame__text{
 .frame__img__item{
     height: 11.43rem; /* 160px */
 }
-.text__title{
-    color: #2571B7;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 6.86rem; /*96*/
-    margin-bottom: 1.93rem; /*48 - 21 = 27*/
-}
+
 .footer__logo{
     display: flex;
     justify-content: space-between;
@@ -310,12 +314,6 @@ div.frame__text{
 }
 .footer_copy{
     color: #B4B4B4;
-}
-@media only screen and (max-width: 1280px){
-    .card__structure{
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 @media only screen and (max-width: 746px) {
     body { background-color: #0f0f0f; }
@@ -342,7 +340,7 @@ div.frame__text{
         font-size: 1.715rem; /* 24 */
         margin: auto 0;
         padding-bottom: 4.2857rem; /* 60 */
-    }
+    } 
 
     div.section__principal__footer { justify-content: center; }
 
@@ -355,9 +353,17 @@ div.frame__text{
 
     .text b { color: inherit; }
 
-    .footer__logo { max-width: 293.60px; }
+    .text__title{
+        padding-top: 2.3575rem; /*33*/
+        padding-bottom: 1.629rem; 
+    }
+    .card { 
+        max-width: 600px; 
+        margin: 0 auto;
+        justify-content: center;
+    }
 
-    .card { max-width: 600px; }
+    .footer__logo { max-width: 293.60px; }
 
     .frame{
         display: flex;
@@ -420,6 +426,14 @@ div.frame__text{
     .frame__container div.frame__text{
         align-items: flex-start;
     }
+    .frame__text__secondary{
+        text-align:  start;
+    }
+    .card__structure,
+    .chart{
+        min-width: 200px;
+        width: 100%;
+    }
     .chart__container{
         flex-direction: column;
         justify-content: center;
@@ -433,24 +447,13 @@ div.frame__text{
         border-left-width: 4px;
         border-right-width: 4px;
     }
-    .card__structure,
-    .chart{
-        min-width: 200px;
-        width: 73vw;
-    }
     .chart:nth-of-type(1){
         border-top-width: 4px;
     }
     .chart:nth-last-of-type(1){
         border-bottom-width: 4px;
     }
-    .text__title{
-        font-size: 1.2rem;
-        margin-top: 2.36rem; /*33*/
-        margin-bottom: 1.93rem; /*27*/
-    }
-    .frame__text__secondary{
-        text-align:  start;
-    }
+    
+    
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

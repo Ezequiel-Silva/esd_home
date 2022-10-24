@@ -84,6 +84,17 @@ div.arrow__right{
 }
 div.arrow__left{ transform: rotate(-45deg); }
 div.arrow__right{ transform: rotate(45deg); }
+
+.banner__text{ padding-top: 6.8572rem; /* 96 */ }
+.text,
+.text b{ font-size: 1.429rem; /*20px*/ }
+.text{
+    color: #737373;
+    padding-top: 1.5rem; /* 21 */
+    line-height: 2rem;
+}
+.text b{ color: #F25022; }
+
 .flex__center{
     display: flex;
     justify-content: center;
@@ -279,13 +290,6 @@ div.frame__text{
 .frame__img__item{
     height: 11.43rem; /* 160px */
 }
-.text{
-    color: #737373;
-    padding-top: 1.5rem;
-}
-.text b{
-    color: #F25022;
-}
 .text__title{
     color: #2571B7;
     font-size: 1.2rem;
@@ -293,10 +297,6 @@ div.frame__text{
     margin-top: 6.86rem; /*96*/
     margin-bottom: 1.93rem; /*48 - 21 = 27*/
 }
-.banner__text{
-    padding: 5.4rem 0 6.9rem 0;
-}
-
 .footer__logo{
     display: flex;
     justify-content: space-between;
@@ -348,14 +348,12 @@ div.frame__text{
 
     a.arrow { display: none; }
 
-    .text{
-        color: #737373;
-        padding-top: 1.5rem;
-    }
+    .banner__text { padding-top: 4.2857rem; /*60*/ }
+
+    .text,
+    .text b{ font-size: 1.0721rem; /*15px*/ }
 
     .text b { color: inherit; }
-
-    .banner__text { padding: 3.43rem 0 0 0; }
 
     .footer__logo { max-width: 293.60px; }
 

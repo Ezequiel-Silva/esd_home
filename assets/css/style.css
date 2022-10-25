@@ -201,19 +201,22 @@ div.frame__text{
     padding-bottom: 0.25rem;
 }
 .image{
-    height: 16rem;
+    height: 320px;
     background-color: #0072C6;
     background-image: url('../img/fundo_img_section.png');
     background-position: center;
     background-size: cover;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.858rem; /*96*/
 }
 .image__text{
     color: var(--color-white);
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 3.429rem; /*48*/
+    line-height: 4.5rem;
     font-weight: normal;
-    background-size: cover;
 }
 .form{
     box-sizing: content-box;
@@ -398,6 +401,14 @@ input:valid ~ label{
     }
     .chart__title{
         font-size: 1.072rem; /*15*/
+    }
+    .image{ 
+        height: 224px;
+        margin-top: 4.286rem; /*60*/
+    }
+    .image__text{
+        font-size: 1.715rem; /*24*/
+        line-height: 2.5rem;
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

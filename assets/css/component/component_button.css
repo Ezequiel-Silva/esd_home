@@ -1,5 +1,10 @@
 @import url('colors.css');
 /*0.0715 ~= 1pixel*/
+
+.menu__link a img{
+    width: 123.7;
+    height: 26.34px;
+}
 .menu_button{ background-color: var(--color-azul-claro); }
 .button_header{
     background-color: #002050;
@@ -12,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .button__main__link{
     font-size: 2.001rem; /* 28 */
@@ -72,6 +78,7 @@
     width: 188px;
 }
 @media only screen and (max-width: 746px) {
+    .menu__link a:first-of-type{ display: none; }
     .button_header{
         font-size: 1rem; /*14*/
         padding: 0.358rem 1.072rem; /*5 15*/

@@ -137,6 +137,47 @@ div.arrow__right{ transform: rotate(45deg); }
     padding: 0.4rem 1.5rem 0.4rem 0;
 }
 
+.frame{
+    display: flex;
+    justify-content: space-between;
+}
+.frame__container{
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 336px;
+}
+.frame__img__item{
+    padding-bottom: 1.429rem; /*20*/
+    height: 11.43rem; /* 160px */
+}
+div.frame__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame__title__green,
+.frame__title__blue,
+.frame__title__orange{ /*21*/
+    text-align: center;
+    font-size: 1.429rem; /*20*/
+}
+.frame__line{
+    width: 53px;
+    height: 4px;
+    background-color: #DEDEDE;
+    margin-top: 1.15rem; /*16px*/
+    margin-bottom: 0.15rem;/*2px*/
+}
+.frame__text__secondary{
+    font-size: 0.78rem;
+    text-align:  center;
+    color: #737373;
+    padding: 1.429rem 0 2.286rem 0; /*20 32*/
+}
+
 .flex__center{
     display: flex;
     justify-content: center;
@@ -233,73 +274,6 @@ input:valid ~ label{
     width: 310px;
     min-width: 310px;
 }
-.frame{
-    display: flex;
-    justify-content: space-between;
-}
-.frame__container{
-    padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 336px;
-}
-div.frame__text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.frame__button__green{
-    display: inline-block;
-    padding: 0.65rem 0.84rem; /*110 por 41*/
-    font-size: 1rem;
-    border: 2px solid #7FBA00;
-}
-.frame__button__blue{
-    display: inline-block;
-    padding: 0.65rem 0.84rem; /*110 por 41*/
-    font-size: 1rem;
-    border: 2px solid #00A4EF;
-}
-.frame__button__orange{
-    display: inline-block;
-    padding: 0.65rem 0.84rem; /*110 por 41*/
-    font-size: 1rem;
-    border: 2px solid #FFB900;
-}
-.frame__title{ 
-    text-align: center;
-    font-size: 1.43rem; /* 172 por 27 */
-}
-.frame__line{
-    width: 53px;
-    height: 4px;
-    background-color: #DEDEDE;
-    margin-top: 1.15rem; /*16px*/
-    margin-bottom: 0.15rem;/*2px*/
-}
-.frame__text__secondary{
-    font-size: 0.78rem;
-    text-align:  center;
-    color: #737373;
-    padding: 1.72rem 0;
-}
-.frame__button__green,
-.frame__title__green{
-    color: #7FBA00;
-}
-.frame__button__blue,
-.frame__title__blue{
-    color: #00A4EF;
-}
-.frame__button__orange,
-.frame__title__orange{
-    color: #FFB900;
-}
-.frame__img__item{
-    height: 11.43rem; /* 160px */
-}
 
 .footer__logo{
     display: flex;
@@ -354,6 +328,7 @@ div.frame__text{
     .text b { color: inherit; }
 
     .text__title{
+        font-size: 1.715rem; /*24*/
         padding-top: 2.3575rem; /*33*/
         padding-bottom: 1.629rem; 
     }
@@ -375,34 +350,6 @@ div.frame__text{
         border-bottom: 3px solid #DEDEDE;
     }
 
-    .frame__button__green {
-        padding-left: 0.36rem;
-        /*82 por 30*/
-        padding-right: 0.36rem;
-        font-size: 0.82rem;
-        margin-left: none;
-        margin-right: none;
-    }
-
-    .frame__button__blue {
-        padding-left: 0.36rem;
-        /*82 por 30*/
-        padding-right: 0.36rem;
-        font-size: 0.82rem;
-        margin-left: none;
-        margin-right: none;
-    }
-
-    .frame__button__orange {
-        padding-left: 0.36rem;
-        /*82 por 30*/
-        padding-right: 0.36rem;
-        font-size: 0.82rem;
-        margin-left: none;
-        margin-right: none;
-    }
-    .frame__line { display: none; }
-
     div.frame__container{
         display: flex;
         flex-direction: row-reverse;
@@ -411,23 +358,24 @@ div.frame__text{
         padding: 1.5rem 0;
         max-width: 100vw; 
     }
-    .frame__title{
-        align-self: flex-start;
-        font-size: 1rem;
-        /* padding: 1rem 0; */
-    }
     .frame__img__item{
-        margin-left: 1.29rem;
+        padding-left: 1.286rem; /*18*/
         height: auto;
-    }
-    .frame__title{ 
-        font-size: 1.07rem; /* 129 por 20 */
     }
     .frame__container div.frame__text{
         align-items: flex-start;
     }
+    .frame__title__green,
+    .frame__title__blue,
+    .frame__title__orange{ /*21*/
+        align-self: flex-start;
+        font-size: 1.072rem; /*15*/
+    } 
+    .frame__line { display: none; }
+    
     .frame__text__secondary{
         text-align:  start;
+        padding: 1.286rem 0; /*18*/
     }
     .card__structure,
     .chart{
@@ -453,7 +401,5 @@ div.frame__text{
     .chart:nth-last-of-type(1){
         border-bottom-width: 4px;
     }
-    
-    
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

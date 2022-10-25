@@ -20,6 +20,40 @@
     background-color: var(--color-azul-claro);
     max-width: 266px;
 }
+.button{
+    color: var(--color-white);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame__button__green,
+.frame__button__blue,
+.frame__button__orange{
+    display: inline-block;
+    padding: 0.65rem 0.84rem; /*110 por 41*/
+    font-size: 1rem;
+}
+.frame__button__green{
+    border: 2px solid #7FBA00;
+    color: #7FBA00;
+}
+.frame__button__blue{
+    border: 2px solid #00A4EF;
+    color: #00A4EF;
+}
+.frame__button__orange{
+    border: 2px solid #FFB900;
+    color: #FFB900;
+}
+
+.frame__title__green{ color: #7FBA00; }
+
+.frame__title__blue{ color: #00A4EF; }
+
+.frame__title__orange{ color: #FFB900; }
+
 .form__button{
     display: flex;
     justify-content: center;
@@ -32,15 +66,6 @@
     background-color: var(--color-azul-claro);
     font-weight: normal;
 }
-.button{
-    color: var(--color-white);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .logo__size{
     width: 188px;
 }
@@ -58,6 +83,14 @@
         padding: 1.158rem 0px; 
         max-width: 188px;
         margin: 0 auto;
+    }
+    .frame__button__green,
+    .frame__button__blue,
+    .frame__button__orange {
+        padding: 0 0.36rem;
+        /*82 por 30*/
+        font-size: 0.82rem;
+        margin: none;
     }
     .form__button button{
         font-size: 1.5rem;

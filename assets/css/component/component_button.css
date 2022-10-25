@@ -56,11 +56,13 @@
 
 .form__button{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 2.5rem;
+    align-items: center;
+    margin: 0 3.429rem 2.5rem 3.429rem;
 }
 .form__button button{
-    font-size: 28px;
+    font-size: 2rem; /*28*/
     padding: 1.11rem 3.5rem;
     color: #FFFFFF;
     background-color: var(--color-azul-claro);
@@ -68,10 +70,6 @@
 }
 .logo__size{
     width: 188px;
-}
-.form__text{
-    color: #737373;
-    padding: 4.3rem 0 1.93rem 0;
 }
 @media only screen and (max-width: 746px) {
     .button_header{
@@ -92,8 +90,10 @@
         font-size: 0.82rem;
         margin: none;
     }
+    .form__button{ margin: 0 1.2857rem; }
     .form__button button{
-        font-size: 1.5rem;
-        padding: 0.86rem 5.15rem;
+        line-height: 1.5rem;
+        font-size: 1.5rem; /*21*/
+        padding: 0.86rem 4.9rem;
     }
 }

@@ -218,24 +218,38 @@ div.frame__text{
     line-height: 4.5rem;
     font-weight: normal;
 }
+.form__container{
+    margin: 0 auto;
+    max-width: 564px;
+    width: 100%;
+}
+.form__text{
+    color: #737373;
+    padding: 4.3rem 0 1.93rem 0;
+}
 .form{
     box-sizing: content-box;
     background-color: #E6E6E6;
     padding: 1.28rem;
 }
-input{
-    padding: 0.7rem;
-    color: #737373;
-}
-label{
-    color: #737373;
-    cursor: pointer;
+.flex__column__reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    margin-left: 3.429rem; /*48*/
+    margin-right: 5.1429rem; /*72*/
 }
 .flex__column__reverse input,
 .flex__column__reverse label{
-    max-width: 468px;
-    min-width: 250px;
-    width: 250px;
+    width: 100%;
+}
+.flex__column__reverse input{
+    font-size: 1.429rem; /*20*/
+}
+input{
+    padding: 0.7rem;
+    color: #737373;
 }
 input:focus,
 input:valid{
@@ -248,18 +262,9 @@ input:valid ~ label{
     color: #2571B7;
     transition: 0.5s;
 }
-.flex__column__reverse{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
-.form__container{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 564px;
-    width: 310px;
-    min-width: 310px;
+label{
+    color: #737373;
+    cursor: pointer;
 }
 
 .footer__logo{
@@ -409,6 +414,13 @@ input:valid ~ label{
     .image__text{
         font-size: 1.715rem; /*24*/
         line-height: 2.5rem;
+    }
+    .flex__column__reverse{
+        margin-left: 1.2857rem; /*18*/
+        margin-right: 2.572rem; /*36*/
+    }
+    .flex__column__reverse input{
+        font-size: 1.072rem; /*15*/
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

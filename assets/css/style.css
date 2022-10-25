@@ -230,7 +230,7 @@ div.frame__text{
 .form{
     box-sizing: content-box;
     background-color: #E6E6E6;
-    padding: 1.28rem;
+    padding: 3.429rem 0;
 }
 .flex__column__reverse{
     display: flex;
@@ -266,21 +266,19 @@ label{
     color: #737373;
     cursor: pointer;
 }
-
-.footer__logo{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 412.11px;
-}
 .footer__logo__left,
 .footer__logo__right{
-    margin-top: 4.72rem;
+    padding: 2rem; /*28*/
 }
-.footer_copy{
-    color: #B4B4B4;
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 412.11px;
+    margin: 4.72rem auto 0 auto;
 }
+.footer_copy{ color: #B4B4B4; }
 .flex__center{
     display: flex;
     justify-content: center;
@@ -342,8 +340,6 @@ label{
         margin: 0 auto;
         justify-content: center;
     }
-
-    .footer__logo { max-width: 293.60px; }
 
     .frame{
         display: flex;
@@ -421,6 +417,17 @@ label{
     }
     .flex__column__reverse input{
         font-size: 1.072rem; /*15*/
+    }
+    .form{
+        padding: 1.2857rem 0;
+    }
+    .footer__logo { 
+        max-width: 293.60px;
+        flex-wrap: wrap; 
+    }
+    .footer__logo__left,
+    .footer__logo__right {
+        padding: 0.29rem; /*28*/
     }
 }
 /* https://www.freecodecamp.org/portuguese/news/como-centralizar-tudo-com-css/#:~:text=Como%20centralizar%20uma%20div%20na%20vertical%20com%20transform%20e%20translate,do%20elemento%20pai%20como%20relative%20. */

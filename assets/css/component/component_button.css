@@ -59,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 3.429rem 2.5rem 3.429rem;
+    margin: 0 3.429rem;
 }
 .form__button button{
     font-size: 2rem; /*28*/

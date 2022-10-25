@@ -1,6 +1,9 @@
 :root{
     /* colors */
     --color-white: #FFF;
+    --color-cinza-claro: #B4B4B4;
+    --color-cinza: #DEDEDE;
+    --color-cinza-escuro: #737373;
     --color-black: #000;
     --color-azul-claro: #00A4EF;
 }
@@ -22,3 +25,22 @@ a.card__structure:nth-child(5){
 a.card__structure:nth-child(6){
     background-color: #00AFF0;
 }
+
+.frame__button__green{
+    border: 2px solid #7FBA00;
+}
+.frame__button__blue{
+    border: 2px solid #00A4EF;
+}
+.frame__button__orange{
+    border: 2px solid #FFB900;
+}
+
+.frame__button__green,
+.frame__title__green{ color: #7FBA00; }
+
+.frame__button__blue,
+.frame__title__blue{ color: #00A4EF; }
+
+.frame__button__orange,
+.frame__title__orange{ color: #FFB900; }

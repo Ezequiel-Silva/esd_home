@@ -24,7 +24,7 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-    border: 2px solid #DEDEDE;
+    border: 2px solid var(--color-cinza);
 }
 .section__principal,
 .section__principal__background{
@@ -70,13 +70,10 @@ a.arrow{
     padding: 0 1rem;
     height: 41px;
     cursor: pointer;
-    /*cateto 28,11 = 790,1721*/
-    /*cateto 29,7 = 882,09*/
-    /*h 1672,2621 ~= 40,89*/
 }
 div.arrow__left,
 div.arrow__right{
-    background-color: #FFF;
+    background-color: var(--color-white);
     height: 2.921rem;
     width: 0.143rem;
 }
@@ -87,7 +84,7 @@ div.arrow__right{ transform: rotate(45deg); }
 .text,
 .text b{ font-size: 1.429rem; /*20px*/ }
 .text{
-    color: #737373;
+    color: var(--color-cinza-escuro);
     padding-top: 1.5rem; /* 21 */
     line-height: 2rem;
 }
@@ -165,14 +162,14 @@ div.frame__text{
 .frame__line{
     width: 53px;
     height: 4px;
-    background-color: #DEDEDE;
+    background-color: var(--color-cinza);
     margin-top: 1.15rem; /*16px*/
     margin-bottom: 0.15rem;/*2px*/
 }
 .frame__text__secondary{
     font-size: 0.78rem;
     text-align:  center;
-    color: #737373;
+    color: var(--color-cinza-escuro);
     padding: 1.429rem 0 2.286rem 0; /*20 32*/
 }
 
@@ -183,7 +180,7 @@ div.frame__text{
     flex-direction: column;
     padding: 2.15rem; 
     width: 25%;
-    border: 2px solid #DEDEDE;
+    border: 2px solid var(--color-cinza);
 }
 .chart__title{
     color: #F25022;
@@ -193,7 +190,7 @@ div.frame__text{
     line-height: 1.8rem;
 }
 .chart__text{
-    color: #737373;
+    color: var(--color-cinza-escuro);
     font-size: 0.76rem;
     text-align: center;
     line-height: 1.24rem;
@@ -224,7 +221,7 @@ div.frame__text{
     width: 100%;
 }
 .form__text{
-    color: #737373;
+    color: var(--color-cinza-escuro);
     padding: 4.3rem 0 1.93rem 0;
 }
 .form{
@@ -249,7 +246,7 @@ div.frame__text{
 }
 input{
     padding: 0.7rem;
-    color: #737373;
+    color: var(--color-cinza-escuro);
 }
 input:focus,
 input:valid{
@@ -263,12 +260,13 @@ input:valid ~ label{
     transition: 0.5s;
 }
 label{
-    color: #737373;
+    color: var(--color-cinza-escuro);
     cursor: pointer;
 }
-.footer__logo__left,
-.footer__logo__right{
-    padding: 2rem; /*28*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .footer__logo{
     display: flex;
@@ -278,22 +276,13 @@ label{
     max-width: 412.11px;
     margin: 4.72rem auto 0 auto;
 }
-.footer_copy{ color: #B4B4B4; }
-.flex__center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer__logo__left,
+.footer__logo__right{
+    padding: 2rem; /*28*/
 }
-.flex__between{
-    display: flex;
-    justify-content: space-between;
-}
-.flex__column{
-    display: flex;
-    flex-direction: column;
-}
+.footer_copy{ color: var(--color-cinza-claro); }
 @media only screen and (max-width: 746px) {
-    body { background-color: #0f0f0f; }
+    body { background-color: #000; }
     
     .section__principal__background,
     .section__principal{
@@ -314,116 +303,131 @@ label{
         padding: 2.315rem 0;
     }
     .text__secondary{
-        font-size: 1.715rem; /* 24 */
         margin: auto 0;
         padding-bottom: 4.2857rem; /* 60 */
     } 
 
+    .text__secondary,
+    .text__title,
+    .image__text{ 
+        font-size: 1.715rem; /*24*/ 
+    }
+
     div.section__principal__footer { justify-content: center; }
 
-    a.arrow { display: none; }
+    a.arrow,
+    .frame__line { 
+        display: none; 
+    }
 
     .banner__text { padding-top: 4.2857rem; /*60*/ }
 
     .text,
-    .text b{ font-size: 1.0721rem; /*15px*/ }
+    .text b,
+    .frame__title__green,
+    .frame__title__blue,
+    .frame__title__orange,
+    .chart__title,
+    .flex__column__reverse input{
+        font-size: 1.0721rem; /*15*/
+    }
 
     .text b { color: inherit; }
 
     .text__title{
-        font-size: 1.715rem; /*24*/
         padding-top: 2.3575rem; /*33*/
         padding-bottom: 1.629rem; 
     }
+
     .card { 
         max-width: 600px; 
         margin: 0 auto;
         justify-content: center;
     }
 
-    .frame{
+    .frame{ justify-content: space-around; }
+
+    .frame,
+    div.frame__container{
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    }
+
+    .frame,
+    .footer__logo { 
+        flex-wrap: wrap; 
     }
 
     .frame article:not(.frame article:last-of-type){
-        border-bottom: 3px solid #DEDEDE;
+        border-bottom: 3px solid var(--color-cinza);
     }
 
     div.frame__container{
-        display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         padding: 1.5rem 0;
         max-width: 100vw; 
     }
+
     .frame__img__item{
         padding-left: 1.286rem; /*18*/
         height: auto;
     }
+
     .frame__container div.frame__text{
         align-items: flex-start;
     }
+
     .frame__title__green,
     .frame__title__blue,
-    .frame__title__orange{ /*21*/
+    .frame__title__orange{
         align-self: flex-start;
-        font-size: 1.072rem; /*15*/
     } 
-    .frame__line { display: none; }
-    
+
     .frame__text__secondary{
         text-align:  start;
         padding: 1.286rem 0; /*18*/
     }
+
     .card__structure{
         min-width: 200px;
         width: 100%;
     }
+
     .chart__container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-width: 0px;
     }
+
     .chart{ 
         padding: 2.15rem 1.5rem; 
         border-left-width: 4px;
         border-right-width: 4px;
         width: auto;
     }
-    .chart:nth-of-type(1){
-        border-top-width: 4px;
-    }
-    .chart:nth-last-of-type(1){
-        border-bottom-width: 4px;
-    }
-    .chart__title{
-        font-size: 1.072rem; /*15*/
-    }
+
+    .chart:nth-of-type(1){ border-top-width: 4px; }
+
+    .chart:nth-last-of-type(1){ border-bottom-width: 4px; }
+
     .image{ 
         height: 224px;
         margin-top: 4.286rem; /*60*/
     }
-    .image__text{
-        font-size: 1.715rem; /*24*/
-        line-height: 2.5rem;
-    }
+
+    .image__text{ line-height: 2.5rem; }
+
     .flex__column__reverse{
         margin-left: 1.2857rem; /*18*/
         margin-right: 2.572rem; /*36*/
-    }
-    .flex__column__reverse input{
-        font-size: 1.072rem; /*15*/
     }
     .form{
         padding: 1.2857rem 0;
     }
     .footer__logo { 
         max-width: 293.60px;
-        flex-wrap: wrap; 
     }
     .footer__logo__left,
     .footer__logo__right {

@@ -2,38 +2,40 @@
 /*0.0715 ~= 1pixel*/
 
 .menu__link a img{
-    width: 123.7;
+    width: 123.7px;
     height: 26.34px;
 }
-.menu_button{ background-color: var(--color-azul-claro); }
+
+.menu_button,
+.button__main__link,
+.form__button button{
+    background-color: var(--color-azul-claro);
+}
+
 .button_header{
     background-color: #002050;
     padding: 0.572rem 1.572rem; /*8 22*/
     color: var(--color-white);
 }
+
+.button,
 .button_head,
 .menu_button,
-.button__main__link {
+.button__main__link,
+.form__button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .button__main__link{
     font-size: 2.001rem; /* 28 */
     padding: 1.672rem 0px;
     color: var(--color-white);
-    background-color: var(--color-azul-claro);
     max-width: 266px;
 }
-.button{
-    color: var(--color-white);
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .frame__button__green,
 .frame__button__blue,
 .frame__button__orange{
@@ -41,66 +43,52 @@
     padding: 0.65rem 0.84rem; /*110 por 41*/
     font-size: 1rem;
 }
-.frame__button__green{
-    border: 2px solid #7FBA00;
-    color: #7FBA00;
-}
-.frame__button__blue{
-    border: 2px solid #00A4EF;
-    color: #00A4EF;
-}
-.frame__button__orange{
-    border: 2px solid #FFB900;
-    color: #FFB900;
-}
-
-.frame__title__green{ color: #7FBA00; }
-
-.frame__title__blue{ color: #00A4EF; }
-
-.frame__title__orange{ color: #FFB900; }
 
 .form__button{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 3.429rem;
 }
+
 .form__button button{
     font-size: 2rem; /*28*/
     padding: 1.11rem 3.5rem;
     color: #FFFFFF;
-    background-color: var(--color-azul-claro);
     font-weight: normal;
 }
-.logo__size{
-    width: 188px;
-}
+
+.logo__size{ width: 188px; }
+
 @media only screen and (max-width: 746px) {
     .menu__link a:first-of-type{ display: none; }
+    
     .button_header{
         font-size: 1rem; /*14*/
         padding: 0.358rem 1.072rem; /*5 15*/
     }
+
     .button__main__link{
-        font-size: 1.5011rem; /* 21 */
         padding: 1.158rem 0px; 
         max-width: 188px;
         margin: 0 auto;
     }
+
+    .button__main__link,
+    .form__button button{
+        font-size: 1.5011rem; /* 21 */
+    }
+
     .frame__button__green,
     .frame__button__blue,
     .frame__button__orange {
         padding: 0 0.36rem;
-        /*82 por 30*/
         font-size: 0.82rem;
         margin: none;
     }
+
     .form__button{ margin: 0 1.2857rem; }
+
     .form__button button{
         line-height: 1.5rem;
-        font-size: 1.5rem; /*21*/
         padding: 0.86rem 4.9rem;
     }
 }

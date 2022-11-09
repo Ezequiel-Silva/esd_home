@@ -282,8 +282,6 @@ label{
 }
 .footer_copy{ color: var(--color-cinza-claro); }
 @media only screen and (max-width: 746px) {
-    body { background-color: #000; }
-    
     .section__principal__background,
     .section__principal{
         height: calc(100vh - var(--header-menu-mobile));

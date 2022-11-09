@@ -52,8 +52,9 @@
 .form__button button{
     font-size: 2rem; /*28*/
     padding: 1.11rem 3.5rem;
-    color: #FFFFFF;
+    color: var(--color-white);
     font-weight: normal;
+    cursor: pointer;
 }
 
 .logo__size{ width: 188px; }
